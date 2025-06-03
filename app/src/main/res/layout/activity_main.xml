@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="-526dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#7373F5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="-200sp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:rotation="-9"
+                        android:text="✅"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/txtQuizTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:padding="16dp"
+                        android:text="Quiz"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:rotation="12"
+                        android:text="❌"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtIntroQuizMatriz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingTop="30sp"
+                    android:paddingBottom="30sp"
+                    android:text="Matematica Aplicada"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/txtResolvaMatrizes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingTop="40sp"
+                    android:paddingBottom="40sp"
+                    android:text="Matriz"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/btnIniciar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="50sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="20sp"
+                    android:backgroundTint="#91F573"
+                    android:text="Iniciar"
+                    android:textColor="#FFF"
+                    android:textSize="50sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

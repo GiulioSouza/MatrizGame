@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#7373F5"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/txtMotivacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100sp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="30sp"
+                android:paddingBottom="20sp"
+                android:text="Agora você já tem o conhecimento necessário para resolver o Quiz! Lutou bravamente contra a aula teórica e chegou vitorioso até aqui. Da pra acreditar??!!"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/txtMotivacao2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="30sp"
+                android:paddingBottom="20sp"
+                android:text="Mas é chegada a hora de você enfrentar o Quiz... Não precisa ficar nervoso, você obteve o conhecimento necessário! "
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnEnfrentarQuiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="50sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginBottom="20sp"
+                android:backgroundTint="#91F573"
+                android:text="Enfrentar Quiz"
+                android:textColor="#FFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnFecharJogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="15sp"
+                android:backgroundTint="#F44336"
+                android:fontFamily="sans-serif-medium"
+                android:text="Fechar Jogo"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#FFFFFF"
+                android:textSize="30sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

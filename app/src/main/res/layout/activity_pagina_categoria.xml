@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="46dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FFFFFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#7373F5"
+            android:orientation="vertical"
+            android:paddingTop="50sp"
+            android:paddingBottom="50sp">
+
+            <TextView
+                android:id="@+id/txtIntroQuizMatriz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100sp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="30sp"
+                android:paddingBottom="20sp"
+                android:text="Você sabe o que são Matrizes?"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/imgExMatriz"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                app:srcCompat="@drawable/exmatriz"
+                android:contentDescription="matrizes"/>
+
+
+            <Button
+                android:id="@+id/btnAprender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginRight="20sp"
+                android:backgroundTint="#91F573"
+                android:text="Aprender!"
+                android:textColor="#FFF"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/txtOu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="30sp"
+                android:paddingBottom="20sp"
+                android:text="ou"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnQuiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginRight="20sp"
+                android:backgroundTint="#F59F73"
+                android:text="Responder Quiz!!"
+                android:textColor="#FFF"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

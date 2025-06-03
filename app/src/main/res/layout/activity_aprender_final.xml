@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        tools:layout_editor_absoluteY="638dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtIntroMatrizQuad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Matriz Quadrada / Calculo de Determinante"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/txtExplicacao7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Uma matriz quadrada de ordem 1, possui uma linha e uma coluna. Uma matriz de ordem 2 possui duas linhas e duas colunas, e assim por diante. Uma matriz genérica é representada por:"
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imgDiagonalPrincipal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/exmatrizquadrada" />
+
+                <TextView
+                    android:id="@+id/txtExplicacao8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="A diagonal principal corresponde aos elementos a(1 1) e a(2 2). Já a diagonal secundária tem os elementos a(1 2) e a(2 1)."
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtExplicacao9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="O determinante da matriz A pode ser calculado da seguinte forma:"
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imgDeterminanteA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/exdeterminantea" />
+
+                <TextView
+                    android:id="@+id/txtExplicacao10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Outro exemplo:"
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imgDeterminanteM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/exdeterminantem" />
+
+                <TextView
+                    android:id="@+id/txtMatrizDetTres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Determinante de Ordem 3"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/txtExplicacao11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Representada por:"
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imgMatrizDeterOTres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/exdeterminanteordemtres" />
+
+                <TextView
+                    android:id="@+id/txtExplicacao12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginBottom="20sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Exemplo com resolução;"
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtExplicacao14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Calcule o determinante da matriz C:"
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imgMatrizC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/exmatrizordemtresdetum" />
+
+                <TextView
+                    android:id="@+id/txtExplicacao15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="1º passo: Escrever os elementos das duas primeiras colunas ao lado da matriz."
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imgMatrizCsegundoPasso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/exmatrizordemtresdetdois" />
+
+                <TextView
+                    android:id="@+id/txtExplicacao16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="2º passo: Multiplicar os elementos das diagonais principais e somá-los."
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imgMatrizCterceiroPasso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:layout_marginBottom="20sp"
+                    app:srcCompat="@drawable/exmatrizordemtresdettres" />
+
+                <TextView
+                    android:id="@+id/txtExplicacao17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="3º passo: Multiplicar os elementos das diagonais secundárias e trocar o sinal."
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imgMatrizCfinal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/exmatrizordemtresdetquatro" />
+
+                <TextView
+                    android:id="@+id/txtExplicacao18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="4º passo: Juntar os termos e resolver as operações de adição e subtração. O resultado é o determinante."
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/exmatrizordemtresdetfinal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="50sp"
+                        android:background="#7373F5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtExplicacao21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="30sp"
+                            android:layout_marginRight="5sp"
+                            android:layout_marginBottom="15sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Pronto para seguir sua jornada?"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/txtExplicacao13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginTop="15sp"
+                            android:layout_marginRight="5sp"
+                            android:layout_marginBottom="30sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Ou prefere revisar o conteúdo estudado?"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal">
+
+                            <Button
+                                android:id="@+id/btnConcluirJornada"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15sp"
+                                android:layout_marginTop="10sp"
+                                android:backgroundTint="#91F573"
+                                android:text="Seguir Jornada"
+                                android:textColor="#FFFFFF"
+                                android:textSize="15sp" />
+
+                            <Button
+                                android:id="@+id/btnRevisarConteudo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10sp"
+                                android:layout_marginTop="10sp"
+                                android:layout_marginRight="20sp"
+                                android:layout_marginBottom="50sp"
+                                android:backgroundTint="#F59F73"
+                                android:text="Revisar Conteúdo"
+                                android:textColor="#FFF"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

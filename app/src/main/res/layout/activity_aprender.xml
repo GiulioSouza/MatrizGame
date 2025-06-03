@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7373F5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="638dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:paddingTop="50sp"
+            android:paddingBottom="50sp">
+
+            <TextView
+                android:id="@+id/txtIntroQuizMatriz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Matrizes são:"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/txtExplicacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:fontFamily="sans-serif-medium"
+                android:text="tabelas organizadas em linhas e colunas no formato m x n, onde m representa o número de linhas (horizontal) e n o número de colunas (vertical). Geralmente representadas em parênteses ou barras:"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imgRepresentacaoMatriz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/exrepresentacaomatriz" />
+
+            <TextView
+                android:id="@+id/txtExplicacao2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Uma matriz qualquer, representada por m x n, é composta por elementos a(i j), em que i representa o número da linha e j o número da coluna que localizam o valor."
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtExplicacao3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Onde a(1 1) = 500; a(1, 2) = 450; a(2 1) = 450(Embaixo do número 500); e, a(2 2) = 490."
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtSomaMatriz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40sp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Soma e Subtração de Matrizes"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/txtExplicacao4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginBottom="20sp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Uma matriz C é obtida através da soma ou subtração dos elementos de uma matriz A e outra B. Essas matrizes A e B precisam ter o mesmo número de linhas e colunas)."
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imgRepresentacaoSoma"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                app:srcCompat="@drawable/exsomamatriz" />
+
+            <TextView
+                android:id="@+id/txtMultiplicacaoMatriz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40sp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Multiplicação de Matrizes"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/txtExplicacao5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:fontFamily="sans-serif-medium"
+                android:text="A multiplicação de duas matrizes, A e B, só é possível se o número de colunas de A for igual ao número de linhas de B. Exemplo: Multiplicação entre a matriz 3 x 2 e a matriz 2 x 3."
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imgMultiplicacaoMatriz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/exmultiplicacaomatriz" />
+
+            <TextView
+                android:id="@+id/txtExplicacao6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Além disso, também existe a multiplicação de matriz por número real, onde:"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/exmultimatriznumreal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30sp"
+                android:background="#7373F5"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnPularParaQuiz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#F59F73"
+                    android:text="Ir para Quiz!"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/btnProsseguir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#91F573"
+                    android:text="Continuar aprendendo "
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
